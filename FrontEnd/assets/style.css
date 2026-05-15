@@ -122,7 +122,6 @@ li:hover {
 }
 #portfolio h2 {
 	text-align: center;
-	margin-bottom: 1em;
 }
 .gallery {
 	width: 100%;
@@ -234,13 +233,54 @@ margin: auto;
 	gap: 5px;
 
 }
-li#login-loginhtml{
-	font-weight: 600;
+.editor-button {
+	display: none;
+	color: black;
+	gap: 5px;
+	align-items: center;
+	justify-content: center;
+	background: none;
+    border: none;
+    cursor: pointer;
+}
+.projet-header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+	justify-content: center;
+	margin-bottom: 90px;
 }
 .login-header {
     padding: 0 150px;
 }
+.filters button:hover{
+	background-color: #1D6154;
+	color: white;
+}
+.filters {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 30px;
 
+}
+
+.filters button {
+    padding: 10px 30px;
+    border-radius: 25px;
+    border: 1px solid #1D6154;
+    color: #1D6154;
+    background: none;
+    cursor: pointer;
+	font-size: 16px;
+	font-weight: 700;
+	font-family: Syne;
+}
+
+.filters button.active {
+    background-color: #1D6154;
+    color: white;
+}
 nav li a {
 	text-decoration: none;
 	color: black;
@@ -251,4 +291,178 @@ nav li a:hover {
 }
 nav li{
 	font-family: work Sans;
+}
+.hidden {
+	display: none;
+}
+
+.hidden {
+	display: none !important;
+}
+
+
+.modal-overlay {
+	position: fixed;
+	inset: 0; 
+	background-color: #0000004D;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}
+
+
+.modal {
+	position: relative;
+	background-color: #FFFFFF;
+	width: 630px;
+	min-height: 670px;
+	border-radius: 10px;
+	padding: 30px 60px;
+	box-sizing: border-box;
+}
+
+
+.modal-header {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 35px;
+}
+
+.modal-title {
+	font-family: "Work Sans", sans-serif;
+	font-size: 26px;
+	font-weight: 400;
+	margin: 0;
+}
+
+
+.modal-close,
+.modal-back {
+	position: absolute;
+	top: 0;
+	background: none;
+	border: none;
+	font-size: 24px;
+	cursor: pointer;
+	padding: 0;
+}
+
+.modal-close {
+	right: 0;
+}
+
+.modal-back {
+	left: 0;
+}
+
+
+
+.gallery-grid {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 10px;
+	margin-bottom: 40px;
+}
+
+.btn-add-photo {
+	display: block;
+	width: 237px;
+	height: 36px;
+	margin: 0 auto;
+	border: none;
+	border-radius: 60px;
+	background-color: #1D6154;
+	color: white;
+	font-family: "Syne", sans-serif;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+
+.modal-form form {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+
+.upload-zone {
+	height: 169px;
+	background-color: #E8F1F6;
+	border-radius: 3px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.upload-zone input[type="file"] {
+	display: none;
+}
+
+.upload-zone label {
+	background-color: #B9C5CC; 
+	color: #306685;
+	padding: 10px 25px;
+	border-radius: 50px;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 500;
+	margin: 10px 0 7px;
+}
+
+.upload-zone p {
+	font-size: 10px;
+	color: #444444;
+	margin: 0;
+}
+
+
+.modal-form label {
+	font-size: 14px;
+	font-weight: 500;
+	color: #3D3D3D;
+}
+
+.modal-form input,
+.modal-form select {
+	height: 51px;
+	border: none;
+	box-shadow: 0 4px 14px #00000017;
+	padding: 0 16px;
+	font-size: 14px;
+	box-sizing: border-box;
+}
+
+
+.modal-form form::after {
+	content: "";
+	display: block;
+	height: 1px;
+	background-color: #B3B3B3;
+	margin: 35px 0 0;
+}
+
+
+.btn-submit {
+	width: 237px;
+	height: 36px;
+	margin: 32px auto 0;
+	border: none;
+	border-radius: 60px;
+	font-family: "Syne", sans-serif;
+	font-size: 14px;
+	cursor: pointer;
+	background-color: #1D6154;
+	color: white;
+}
+
+
+.btn-submit:disabled {
+	background-color: #A7A7A7;
+	cursor: default;
 }
