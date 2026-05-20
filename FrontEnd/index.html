@@ -78,6 +78,70 @@
 			</nav>
 		</footer>
 	</div>
-</body>
+
+<div class="modal-overlay hidden">
+	<div class="modal">
+
+		<div class="modal-header">
+			<button class="modal-back hidden" type="button">
+				<i class="fa-solid fa-arrow-left"></i>
+			</button>
+
+			<h2 class="modal-title">Galerie photo</h2>
+
+			<button class="modal-close" type="button">
+				<i class="fa-solid fa-xmark"></i>
+			</button>
+		</div>
+
+		<section class="modal-gallery">
+			<div class="modal-gallery-grid">
+				<!-- Miniatures ajoutées en JS -->
+			</div>
+
+			<hr class="modal-separator">
+
+			<button class="btn-add-photo" type="button">
+				Ajouter une photo
+			</button>
+		</section>
+
+		<section class="modal-form hidden">
+			<form id="add-work-form">
+
+				<div class="upload-zone">
+					<i class="fa-regular fa-image upload-icon"></i>
+
+					<label for="work-image" class="upload-label">
+						+ Ajouter photo
+					</label>
+
+					<input type="file" id="work-image" accept="image/png, image/jpeg">
+
+					<p class="upload-info">jpg, png : 4mo max</p>
+
+					<img class="preview-image hidden" alt="Aperçu de l’image">
+				</div>
+
+				<label for="work-title">Titre</label>
+				<input type="text" id="work-title">
+
+				<label for="work-category">Catégorie</label>
+				<select id="work-category">
+					<option value=""></option>
+				</select>
+
+				<hr class="modal-separator">
+
+				<button type="submit" class="btn-submit" disabled>
+					Valider
+				</button>
+
+			</form>
+		</section>
+
+	</div>
+</div>
 <script src="./main.js"></script>
+</body>
 </html>
