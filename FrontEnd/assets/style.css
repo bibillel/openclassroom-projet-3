@@ -371,226 +371,226 @@ nav li {
 ========================= */
 
 .modal-overlay {
-	position: fixed;
-	inset: 0;
-	background-color: #0000004D;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	z-index: 1000;
+  position: fixed;
+  inset: 0;
+  background-color: #0000004d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 }
 
 .modal {
-	position: relative;
-	width: 630px;
-	max-width: 90%;
-	height: 688px;
-	max-height: 90vh;
-	background-color: #FFFFFF;
-	border-radius: 10px;
-	box-sizing: border-box;
-	padding-top: 48px;
+  position: relative;
+  width: 630px;
+  max-width: 90%;
+  height: 688px;
+  max-height: 90vh;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding-top: 48px;
   overflow: hidden;
 }
 
 .modal-title {
-	font-family: "Work Sans", sans-serif;
-	font-weight: 400;
-	font-size: 26px;
-	line-height: 100%;
-	text-align: center;
-	color: #000000;
-	margin: 0 0 46px 0;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 100%;
+  text-align: center;
+  color: #000000;
+  margin: 0 0 46px 0;
 }
 
 .modal-close,
 .modal-back {
-	position: absolute;
-	top: 26px;
-	background: none;
-	border: none;
-	color: #000000;
-	cursor: pointer;
-	padding: 0;
+  position: absolute;
+  top: 26px;
+  background: none;
+  border: none;
+  color: #000000;
+  cursor: pointer;
+  padding: 0;
 }
 
 .modal-close {
-	right: 30px;
-	font-size: 20px;
+  right: 30px;
+  font-size: 20px;
 }
 
 .modal-back {
-	left: 30px;
-	font-size: 21px;
+  left: 30px;
+  font-size: 21px;
 }
 
 /* Vue galerie */
 
 .modal-gallery-grid {
-	width: 420px;
-	margin: 0 auto;
-	display: grid;
-	grid-template-columns: repeat(5, 76.86px);
-	gap: 29px 9px;
+  width: 420px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 76.86px);
+  gap: 29px 9px;
 }
 
 .modal-work {
-	position: relative;
-	width: 76.86px;
-	height: 102.57px;
+  position: relative;
+  width: 76.86px;
+  height: 102.57px;
 }
 
 .modal-work img {
-	width: 76.86px;
-	height: 102.57px;
-	object-fit: cover;
-	display: block;
+  width: 76.86px;
+  height: 102.57px;
+  object-fit: cover;
+  display: block;
 }
 
 .delete-work {
-	position: absolute;
-	top: 6px;
-	right: 6px;
-	width: 17px;
-	height: 17px;
-	background-color: #000000;
-	color: #FFFFFF;
-	border: none;
-	padding: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 10px;
-	cursor: pointer;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 17px;
+  height: 17px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  cursor: pointer;
 }
 
 .modal-separator {
-	width: 420px;
-	height: 1px;
-	border: none;
-	background-color: #B3B3B3;
-	margin: 67px auto 28px auto;
+  width: 420px;
+  height: 1px;
+  border: none;
+  background-color: #b3b3b3;
+  margin: 67px auto 28px auto;
 }
 
 .btn-add-photo {
-	width: 237px;
-	height: 36px;
-	border-radius: 60px;
-	border: none;
-	background-color: #1D6154;
-	color: #FFFFFF;
-	font-family: "Syne", sans-serif;
-	font-size: 14px;
-	cursor: pointer;
-	display: block;
-	margin: 0 auto;
+  width: 237px;
+  height: 36px;
+  border-radius: 60px;
+  border: none;
+  background-color: #1d6154;
+  color: #ffffff;
+  font-family: "Syne", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
 }
 
 /* Vue formulaire */
 
 .modal-form form {
-	width: 420px;
-	margin: 0 auto;
-	display: flex;
-	flex-direction: column;
+  width: 420px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .upload-zone {
-	width: 420px;
-	height: 169px;
-	background-color: #E8F1F6;
-	border-radius: 3px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	overflow: hidden;
-	margin-bottom: 30px;
+  width: 420px;
+  height: 169px;
+  background-color: #e8f1f6;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 30px;
 }
 
 .upload-icon {
-	font-size: 58px;
-	color: #B9C5CC;
-	margin-bottom: 12px;
+  font-size: 58px;
+  color: #b9c5cc;
+  margin-bottom: 12px;
 }
 
 .upload-zone input[type="file"] {
-	display: none;
+  display: none;
 }
 
 .upload-label {
-	width: 173px;
-	height: 36px;
-	border-radius: 50px;
-	background-color: #CBD6DC;
-	color: #306685;
-	font-family: "Work Sans", sans-serif;
-	font-size: 14px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
-	margin-bottom: 7px;
+  width: 173px;
+  height: 36px;
+  border-radius: 50px;
+  background-color: #cbd6dc;
+  color: #306685;
+  font-family: "Work Sans", sans-serif;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 7px;
 }
 
 .upload-info {
-	font-family: "Work Sans", sans-serif;
-	font-size: 10px;
-	line-height: 100%;
-	text-align: center;
-	color: #444444;
-	margin: 0;
+  font-family: "Work Sans", sans-serif;
+  font-size: 10px;
+  line-height: 100%;
+  text-align: center;
+  color: #444444;
+  margin: 0;
 }
 
 .preview-image {
-	max-width: 100%;
-	max-height: 100%;
-	object-fit: contain;
-	display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .modal-form label {
-	font-family: "Work Sans", sans-serif;
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 100%;
-	color: #3D3D3D;
-	margin-bottom: 10px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  color: #3d3d3d;
+  margin-bottom: 10px;
 }
 
 .modal-form input,
 .modal-form select {
-	width: 420px;
-	height: 51px;
-	border: none;
-	background-color: #FFFFFF;
-	box-shadow: 0px 4px 14px 0px #00000017;
-	box-sizing: border-box;
-	padding: 0 16px;
-	font-family: "Work Sans", sans-serif;
-	font-size: 14px;
-	margin-bottom: 21px;
+  width: 420px;
+  height: 51px;
+  border: none;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 14px 0px #00000017;
+  box-sizing: border-box;
+  padding: 0 16px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 14px;
+  margin-bottom: 21px;
 }
 
 .btn-submit {
-	width: 237px;
-	height: 36px;
-	border-radius: 60px;
-	border: none;
-	background-color: #1D6154;
-	color: #FFFFFF;
-	font-family: "Syne", sans-serif;
-	font-size: 14px;
-	cursor: pointer;
-	display: block;
-	margin: 4px auto 0 auto;
+  width: 237px;
+  height: 36px;
+  border-radius: 60px;
+  border: none;
+  background-color: #1d6154;
+  color: #ffffff;
+  font-family: "Syne", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  display: block;
+  margin: 4px auto 0 auto;
 }
 
 .btn-submit:disabled {
-	background-color: #A7A7A7;
-	cursor: default;
+  background-color: #a7a7a7;
+  cursor: default;
 }
 
 .hidden {
-	display: none;
+  display: none;
 }
