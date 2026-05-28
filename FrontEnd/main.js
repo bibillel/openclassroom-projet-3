@@ -63,7 +63,6 @@ function handleEditorMode() {
     });
   }
 }
-/* modal variable*/
 
 const modalOverlay = document.querySelector(".modal-overlay");
 const modal = document.querySelector(".modal");
@@ -78,8 +77,6 @@ const modalGalleryGrid = document.querySelector(".modal-gallery-grid");
 const btnAddPhoto = document.querySelector(".btn-add-photo");
 const editorButton = document.querySelector(".editor-button");
 
-/* forms variable */
-
 const addWorkForm = document.querySelector("#add-work-form");
 const workImageInput = document.querySelector("#work-image");
 const workTitleInput = document.querySelector("#work-title");
@@ -90,6 +87,7 @@ const previewImage = document.querySelector(".preview-image");
 const uploadIcon = document.querySelector(".upload-icon");
 const uploadLabel = document.querySelector(".upload-label");
 const uploadInfo = document.querySelector(".upload-info");
+const uploadError = document.querySelector(".upload-error");
 
 /* opening modal and closing */
 
@@ -171,6 +169,28 @@ function showImagePreview() {
     return;
   }
 
+  const validTypes = ["image/jpeg", "image/png"];
+  const maxSize = 4 * 1024 * 1024;
+
+  if (!validTypes.includes(file.type)) {
+    uploadError.textContent = "Format invalide. Utilisez une image JPG ou PNG.";
+    uploadError.classList.remove("hidden");
+    workImageInput.value = "";
+    checkAddWorkFormValidity();
+    return;
+  }
+
+  if (file.size > maxSize) {
+    uploadError.textContent = "L’image ne doit pas dépasser 4 Mo.";
+    uploadError.classList.remove("hidden");
+    workImageInput.value = "";
+    checkAddWorkFormValidity();
+    return;
+  }
+
+  uploadError.classList.add("hidden");
+  uploadError.textContent = "";
+
   const imageUrl = URL.createObjectURL(file);
 
   previewImage.src = imageUrl;
@@ -192,7 +212,8 @@ function resetAddWorkForm() {
   uploadIcon.style.display = "";
   uploadLabel.style.display = "";
   uploadInfo.style.display = "";
-
+  uploadError.textContent = "";
+  uploadError.classList.add("hidden");
   submitWorkButton.disabled = true;
 }
 
