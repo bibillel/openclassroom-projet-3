@@ -28,4 +28,4 @@ npm start
 
 [documentation Swagger](http://localhost:5678/api-docs/)
 
-Pour lire la documentation, utiliser Chrome ou Firefox
+https://github.com/bibillel/openclassroom-projet-3
